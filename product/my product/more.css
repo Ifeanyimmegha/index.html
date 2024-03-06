@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid gray;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(211, 198, 123);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(211, 198, 123);
+}
+
+.logo-type {
+    display: flex;
+    align-items: center;
+    color: rgb(211, 198, 123);
+    gap: 8px;
+}
+
+.logo-text h6 {
+    font-size: 12px;
+    background: none;
+    color: rgb(211, 198, 123);
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: -5px;
+}
+
+#count {
+    font-size: 18px;
+}
+
+.header img {
+    width: 45px;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-bar .fa-bars {
+    color: white;
+    font-size: 18px;
+}
+
+.cart p {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: rgb(221, 205, 111);
+    color: white;
+}
+
+.cart {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    margin: 0 25px;
+    transition: all ease 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(192, 180, 112);
+}
+
+.navbar a.active {
+    color: rgb(192, 180, 112);
+}
+
+/*menu-bar*/
+.menu-bar .fa-bars {
+    color: white;
+    font-size: 18px;
+}
+
+/*search*/
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.search-bar {
+    margin-top: 5%;
+}
+
+.search-bar form {
+    width: 200%;
+    border: 2px solid rgb(192, 180, 112);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar form input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+}
+
+.search-bar form i {
+    padding-left: 10px;
+    color: rgb(211, 198, 123);
+}
+
+.goods #part {
+    color: white;
+    font-size: 18px;
+}
+
+.goods {
+    margin-top: 2%;
+}
+
+.goods i {
+    display: none;
+}
+
+.goods h3 {
+    color: white;
+    font-size: 13px;
+    background-color: rgb(161, 149, 80);
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: -10px;
+}
+
+.goods h3:hover {
+    background-color: transparent;
+    border: 1px solid rgb(161, 149, 80);
+}
+
+
+/*navigation*/
+.navigation {
+    font-style: italic;
+    position: absolute;
+    width: 220px;
+    height: 72vh;
+    padding: 10px;
+    top: 20%;
+    right: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(161, 149, 80);
+    transition: all 0.4s ease-out;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 3px;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.navigation.open {
+    right: 0;
+}
+
+.navigation a:hover {
+    color: rgb(192, 180, 112);
+}
+.react h2{
+    background-color: black;
+    width: 100%;
+    color: rgb(161, 149, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.react a:hover{
+    background-color: transparent;
+    border-radius: -10px;
+}
+.react .fa-chevron-down{
+    font-size: 14px;
+}
+
+.react .fa-chevron-down:hover {
+    transform: translateY(-3px);
+}
+/*topic*/
+.head-part h3{
+    font-size: 30px;
+    background-color: transparent;
+    color: rgb(221, 205, 111);
+    text-align: center;
+}
+/*product*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#root {
+    width: 150%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -20px;
+}
+
+.star-form {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-star {
+    -webkit-text-stroke: 1px white;
+    color: rgb(221, 221, 24);
+    font-size: 15px;
+    gap: 10px;
+    display: inline-flex;
+
+}
+
+.fa-star:hover {
+    transform: translateY(-3px);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid black;
+}
+
+/*product*/
+.box-cart {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+
+.product {
+    justify-content: space-between;
+    border: 1px solid rgb(211, 198, 123);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media(max-width:600px) {
+    .box {
+        width: 100%;
+    }
+}
+
+.img-box {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-width: 120%;
+    max-height: 100%;
+    object-position: cover;
+    object-fit: contain;
+}
+
+.bottom {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 20px;
+    color: red;
+}
+
+button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221, 205, 111);
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    border: 2px solid rgb(221, 205, 111);
+}
+
+.part h2 {
+    font-size: 20px;
+    color: black;
+    background-color: bisque;
+    width: 5%;
+    height: 10%;
+    padding: 5px;
+    text-align: center;
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+}

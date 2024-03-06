@@ -1,0 +1,17 @@
+.head-product h5{
+    text-align: center;
+    -webkit-text-stroke: 1px  rgb(221, 205, 111);
+    font-size: 60px;
+    color: transparent;
+    background: url(image/logo.png);
+    -webkit-background-clip: text;
+    background-position: center;
+    animation: back 20s linear infinite;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
